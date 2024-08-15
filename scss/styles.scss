@@ -1,0 +1,79 @@
+// |---------------| Navbar |---------------|
+.btn-outline-secondary {
+    color: var(--bs-secondary);
+}
+
+.btn-outline-secondary {
+    &:hover {
+        color: white;
+    }
+}
+
+.navbar {
+    transition: all 0.5s ease-in-out;
+}
+
+.navbar-sticky {
+    background-color: var(--bs-light);
+    opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+// |---------------| Navbar |---------------|
+
+// |---------------| Header |---------------|
+.header .decoration-star1 {
+    top: 80px;
+    left: -200px;
+    width: 500px;
+    opacity: 0.7;
+}
+
+.header .decoration-star2 {
+    top: 80px;
+    right: -200px;
+    width: 500px;
+    opacity: 0.7;
+}
+// |---------------| Header |---------------|
+
+// |---------------| Media Queries |---------------|
+// |=====| Tablet sizes |=====|
+@media(max-width: 992px) {
+    .display-1 {
+        font-size: 50px;
+    }
+
+    .navbar {
+        .btn-outline-secondary {
+            margin-top: 20px;
+        }
+    }
+
+    .header {
+        margin-top: 0px !important;
+        text-align: center;
+    }
+
+    .header .decoration-star1 {
+        left: -100px;
+        width: 250px;
+    }
+    
+    .header .decoration-star2 {
+        right: -100px;
+        width: 250px;
+    }
+
+    .image-container {
+        margin-top: 30px;
+    }
+}
+// |=====| Tablet sizes |=====|
+
+// |=====| Phone sizes |=====|
+@media(max-width: 576px) {
+
+}
+// |=====| Phone sizes |=====|
+
+// |---------------| Media Queries |---------------|
