@@ -13,11 +13,22 @@
     transition: all 0.5s ease-in-out;
 }
 
+.navbar-starter {
+    opacity: 0.9;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
 .navbar-sticky {
     background-color: var(--bs-light);
     opacity: 0.9;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
+
 // |---------------| Navbar |---------------|
 
 // |---------------| Header |---------------|
