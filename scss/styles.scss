@@ -65,6 +65,39 @@
 }
 // |---------------| Contact |---------------|
 
+// |---------------| To Top Button |---------------|
+.to-top-btn {
+    position: fixed;
+    z-index: 10;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+    background-color: var(--bs-body-color);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+    img {
+        margin-bottom: 0.25rem;
+        width: 18px;
+    }
+}
+
+.to-top-btn {
+    &:hover {
+        background-color: var(--bs-dark);
+    }
+}
+
+.show {
+    opacity: 1;
+}
+// |---------------| To Top Button |---------------|
+
 // |---------------| Media Queries |---------------|
 // |=====| Tablet sizes |=====|
 @media(max-width: 992px) {
