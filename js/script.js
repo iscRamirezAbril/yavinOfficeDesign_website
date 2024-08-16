@@ -23,12 +23,22 @@ function userScroll() {
 }
 // |-----| Scroll Effect function |-----| //
 
+// |-----| Fetch Navbar Function |-----| //
 fetch('templates/navbar.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('navbar-placeholder').innerHTML = data;
         userScroll();
     })
+// |-----| Fetch Navbar Function |-----| //
+
+// |-----| Fetch Footer Function |-----| //
+fetch('templates/footer.html')
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+// |-----| Fetch Footer Function |-----| //
 
 // |-----| Stats Counter function |-----| //
 function incrementStats() {
